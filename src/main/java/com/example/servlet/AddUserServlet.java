@@ -28,6 +28,9 @@ public class AddUserServlet extends HttpServlet {
         User user=new User(firstName, lastName);
         warehouse.addUser(user);
 
+        req.setAttribute("firstName", firstName);
+        req.setAttribute("lastName", lastName);
+
         resp.sendRedirect("/add");
     }
 }

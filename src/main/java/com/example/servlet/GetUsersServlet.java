@@ -3,7 +3,7 @@ package com.example.servlet;
 import com.example.User;
 import com.example.Warehouse;
 
-import javax.servlet.RequestDispatcher;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -17,11 +17,11 @@ public class GetUsersServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)  {
         Set<User> users = Warehouse.getInstance().getUsers();
+
         req.setAttribute("users", users);
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/jsp/users.jsp");
 
         try {
-            dispatcher.forward(req, resp);
+            req.getRequestDispatcher("/jsp/users.jsp").forward(req, resp);
         } catch (ServletException | IOException e) {
             e.printStackTrace();
         }

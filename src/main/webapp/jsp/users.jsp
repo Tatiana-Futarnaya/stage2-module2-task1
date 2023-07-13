@@ -1,7 +1,8 @@
 <%@ page import="java.util.Set" %>
 <%@ page import="com.example.User" %>
 <%@ page contentType="text/html;charset=UTF-8" %>
-<html>
+<!DOCTYPE html>
+<html> <!-- Compliant -->
 <body>
 <head>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">

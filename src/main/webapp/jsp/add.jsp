@@ -1,10 +1,11 @@
 <%@ page import="com.example.User" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" %>
 
 <html>
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title></title>
 </head>
 <body>
 <div class="w3-container" style="margin-left:10px; width:400px;">
@@ -18,9 +19,13 @@
         <span>Add user</span>
     </h3>
     <form action="add" method="post">
-        <input class="w3-input w3-border" required name="firstName" placeholder="Enter First Name">
+        <label>
+            <input class="w3-input w3-border" required name="firstName" placeholder="Enter First Name">
+        </label>
         <br>
-        <input class="w3-input w3-border" required name="lastName" placeholder="Enter Last Name">
+        <label>
+            <input class="w3-input w3-border" required name="lastName" placeholder="Enter Last Name">
+        </label>
         <br>
         <button class="w3-button w3-round btn-block w3-green" type="submit">Submit</button>
     </form>

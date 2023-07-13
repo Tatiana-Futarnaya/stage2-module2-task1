@@ -3,9 +3,11 @@
 <!DOCTYPE html>
 <html>
 <html lang="en" xml:lang="en"> <!-- Compliant -->
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <title></title>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <title></title>
+    </head>
 <body>
 <div class="w3-container" style="margin-left:10px; width:400px;">
     <%

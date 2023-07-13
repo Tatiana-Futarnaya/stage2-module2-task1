@@ -19,7 +19,7 @@ public class AddUserServlet extends HttpServlet {
     }
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws  IOException {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
         String firstName= req.getParameter("firstName");
         String lastName=req.getParameter("lastName");
 
@@ -29,6 +29,6 @@ public class AddUserServlet extends HttpServlet {
 
         req.setAttribute("user", user);
 
-        resp.sendRedirect("/add");
+        req.getRequestDispatcher("/jsp/add.jsp").forward(req, resp);
     }
 }

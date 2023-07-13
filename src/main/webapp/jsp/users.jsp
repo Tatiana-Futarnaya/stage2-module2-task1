@@ -2,7 +2,7 @@
 <%@ page import="com.example.User" %>
 <%@ page contentType="text/html;charset=UTF-8" %>
 <!DOCTYPE html>
-<html> <!-- Compliant -->
+<html lang="en" xml:lang="en"> <!-- Compliant -->
 <body>
 <head>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">

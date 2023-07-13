@@ -1,7 +1,6 @@
 <%@ page import="com.example.User" %>
 <%@ page contentType="text/html;charset=UTF-8" %>
 <!DOCTYPE html>
-<html>
 <html lang="en" xml:lang="en"> <!-- Compliant -->
     <head>
         <meta charset="utf-8">
